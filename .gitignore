@@ -1,0 +1,24 @@
+# Build outputs
+build/
+out/
+.gradle/
+.gradle-home/
+run/
+logs/
+
+# Local tooling
+tools/launch_client.py
+tools/game_ctl.py
+
+# Third-party jars used only for compilation (not redistributable)
+libs/*.jar
+
+# IDE / OS noise
+.idea/
+.vscode/
+*.iml
+*.log
+__pycache__/
+*.pyc
+Thumbs.db
+desktop.ini

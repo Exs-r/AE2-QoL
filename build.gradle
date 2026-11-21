@@ -1,0 +1,70 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+
+group = 'com.ae2qol'
+version = project.mod_version
+
+base {
+    archivesName = 'ae2qol'
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(21)
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'Modrinth'
+        url = 'https://api.modrinth.com/maven'
+        content {
+            includeGroup 'maven.modrinth'
+        }
+    }
+}
+
+neoForge {
+    version = project.neoforge_version
+
+    runs {
+        client {
+            client()
+        }
+        server {
+            server()
+        }
+    }
+
+    mods {
+        ae2qol {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+dependencies {
+    // AE2 and its own dependencies are provided at runtime by the actual mod jars,
+    // so they are compileOnly. They are resolved from Modrinth's Maven repository.
+    compileOnly("maven.modrinth:ae2:${project.ae2_version}") { transitive = false }
+    compileOnly("maven.modrinth:guideme:${project.guideme_version}") { transitive = false }
+    compileOnly("maven.modrinth:glodium:${project.glodium_version}") { transitive = false }
+}
+
+jar {
+    manifest {
+        attributes([
+                'Specification-Title'     : 'ae2qol',
+                'Specification-Vendor'    : 'ae2qol',
+                'Specification-Version'   : '1',
+                'Implementation-Title'    : 'AE2 QoL',
+                'Implementation-Version'  : project.version,
+                'Implementation-Vendor'   : 'ae2qol'
+        ])
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
