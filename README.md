@@ -1,5 +1,7 @@
 # AE2 助手
 
+[English](README.en.md) | 简体中文
+
 [![Release](https://img.shields.io/github/v/release/Exs-r/ae2-qol?style=flat-square&label=Release)](https://github.com/Exs-r/ae2-qol/releases)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green.svg?style=flat-square)](https://minecraft.net)
