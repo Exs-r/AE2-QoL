@@ -113,7 +113,7 @@ Windows 下用 `gradlew.bat build`。
 
 产物位于 `build/libs/ae2qol-1.0.0.jar`。
 
-`libs/` 中的编译依赖（AE2、Guideme、Glodium 的 jar）因版权原因不随仓库分发，请自行从 CurseForge / Modrinth 下载对应版本放入该目录。
+AE2、Guideme、Glodium 会在构建时从 Modrinth 的 Maven 仓库自动下载，无需手动准备。
 
 ## 常见问题
 
