@@ -1,0 +1,39 @@
+name: Bug report
+description: Report a crash or unexpected behaviour
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Please fill in as much as you can.
+  - type: input
+    id: mod-version
+    attributes:
+      label: AE2 助手 version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Minecraft / NeoForge / AE2 versions, plus any optional addons you use.
+      placeholder: "1.21.1 / NeoForge 21.1.227 / AE2 19.2.18 / ExtendedAE 2.2.42"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened
+      description: What did you do, what did you expect, what actually happened?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / crash report
+      description: Paste `latest.log` or the crash report, ideally on https://gist.github.com and link it here.
+      render: text
+    validations:
+      required: false

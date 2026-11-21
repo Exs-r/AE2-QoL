@@ -1,25 +1,63 @@
 # AE2 助手
 
-> **下载**：<https://github.com/Exs-r/ae2-qol/releases> · **源码**：<https://github.com/Exs-r/ae2-qol>
+[![Release](https://img.shields.io/github/v/release/Exs-r/ae2-qol?style=flat-square&label=Release)](https://github.com/Exs-r/ae2-qol/releases)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+[![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green.svg?style=flat-square)](https://minecraft.net)
+[![NeoForge](https://img.shields.io/badge/NeoForge-21.1.x-orange.svg?style=flat-square)](https://neoforged.net)
+[![AE2](https://img.shields.io/badge/AE2-19.2.17%2B-lightgrey.svg?style=flat-square)](https://github.com/AppliedEnergistics/Applied-Energistics-2)
 
-面向 **NeoForge 1.21.1** 的 Applied Energistics 2 附属模组，让整合包玩家把精力集中在科技线上。
+> 一个让玩家把精力集中在科技线上的 Applied Energistics 2 附属模组。
+
+按 `I` 打开一个 AE2 风格的界面，可以取消频道限制、开启创造飞行，并领取新手礼包和 ME 无限元件包。
+
+## 目录
+
+- [功能](#功能)
+- [兼容性](#兼容性)
+- [安装](#安装)
+- [礼包内容](#礼包内容)
+- [构建](#构建)
+- [常见问题](#常见问题)
+- [许可证](#许可证)
+- [致谢](#致谢)
 
 ## 功能
 
-| 功能 | 说明 | 状态 |
-| --- | --- | --- |
-| 快捷界面 | 默认按 `I` 打开，可在「选项 → 控制 → 按键绑定」修改 | 已验证 |
-| 取消 AE2 频道限制 | 服务器全局开关，默认关闭；开启后 AE 网络不再需要频道 | 已验证 |
-| 创造模式飞行 | 每位玩家独立开关，默认关闭；开启后双击空格飞行 | 已验证 |
-| 新手礼包 | 可重复领取，满电 256k 便携元件 | 已验证 |
-| ME 无限元件包 | 可重复领取，满电 256k 便携元件 | 已验证 |
+| 功能 | 说明 |
+| --- | --- |
+| 快捷界面 | 默认按 `I` 打开，可在「选项 → 控制 → 按键绑定」中修改 |
+| 取消 AE2 频道限制 | 服务器全局开关，默认关闭；开启后 AE 网络不再需要频道，状态写入存档 |
+| 创造模式飞行 | 每位玩家独立开关，默认关闭；开启后双击空格即可像创造模式一样飞行 |
+| 新手礼包 | 可重复领取，满电 256k 便携元件，内含一套 AE2 开局设备 |
+| ME 无限元件包 | 可重复领取，满电 256k 便携元件，内含 ME 无限元件与常用设备 |
 
 界面使用 AE2 自身的面板颜色（`#413F54` 外描边、`#F2F2F2` 内描边、`#CBCCD4` 填充）和 AE2 官方
 `AE2Button` 按钮贴图，与高版本 AE2 的终端界面保持一致。
 
+## 兼容性
+
+| 项目 | 版本 |
+| --- | --- |
+| Minecraft | 1.21.1 |
+| NeoForge | 21.1.x |
+| Applied Energistics 2 | 19.2.17+（必需） |
+
+以下附属为**可选**：装了就发放对应物品，没装只会跳过该条并写一条 WARN 日志，不会崩溃。
+
+- ExtendedAE
+- AE2WTLib
+- ExtendedAE-Plus
+- AE2-FTBQuest-Detector
+
+## 安装
+
+1. 安装 Minecraft 1.21.1 与 NeoForge 21.1.x。
+2. 安装 Applied Energistics 2 19.2.17 或更高版本。
+3. 从 [Releases](https://github.com/Exs-r/ae2-qol/releases) 下载 `ae2qol-*.jar`，放入整合包的 `mods` 目录。
+
 ## 礼包内容
 
-**新手礼包**（`新手礼包` 便携元件，满电）
+### 新手礼包
 
 | 物品 | 注册名 | 数量 |
 | --- | --- | --- |
@@ -40,7 +78,7 @@
 | 吞噬万籁的寂静 | `extendedae_plus:infinity_biginteger_cell` | 1 |
 | ME 任务检测器 | `ae2_ftbquest_detector:me_quests_detector` | 1 |
 
-**ME 无限元件包**（`ME无限元件包` 便携元件，满电）
+### ME 无限元件包
 
 | 物品 | 注册名 |
 | --- | --- |
@@ -57,40 +95,49 @@
 | ME 扩展输出总线 | `extendedae:ex_export_bus_part` |
 | 标签无线收发器 | `extendedae_plus:labeled_wireless_transceiver` |
 
-## 安装
-
-1. 需要 Minecraft 1.21.1 + NeoForge 21.1.x + AE2 19.2.17+。
-2. ExtendedAE、AE2WTLib、ExtendedAE-Plus、AE2-FTBQuest-Detector 为可选依赖：缺失时对应物品会跳过并写一条 WARN 日志，不会导致崩溃。
+两个礼包都使用满电的 256k 便携元件，内容通过 AE2 的 `STORAGE_CELL_INV` 数据组件写入。
 
 ## 构建
 
-需要 JDK 21 与 Gradle 8.10+。
+需要 JDK 21。
 
-```bat
-gradle build
+```bash
+git clone https://github.com/Exs-r/ae2-qol.git
+cd ae2-qol
+./gradlew build
 ```
 
-产物：`build/libs/ae2qol-1.0.0.jar`
+Windows 下用 `gradlew.bat build`。
+
+产物位于 `build/libs/ae2qol-1.0.0.jar`。
 
 `libs/` 中的编译依赖（AE2、Guideme、Glodium 的 jar）因版权原因不随仓库分发，请自行从 CurseForge / Modrinth 下载对应版本放入该目录。
 
-## 实现要点
+## 常见问题
 
-- 开关状态保存在世界存档的 `ae2qol_state`（`SavedData`），服务器重启后自动恢复。
-- 频道开关调用 AE2 的 `AEConfig#setChannelModel(INFINITE/DEFAULT)`；该调用只改运行时配置，不会改写整合包的 `ae2-common.toml`。
-- 礼包通过 AE2 数据组件写入：`STORAGE_CELL_INV`（内容）、`STORED_ENERGY` / `ENERGY_CAPACITY`（满电）。
-- 两个量子缠绕态奇点共享同一个 `ENTANGLED_SINGULARITY_ID`，可以正常配对。
-- 所有非 AE2 物品都用注册名查找，未安装对应附属时只跳过该条。
-- 领取有 1 秒服务端冷却；背包满时元件掉落在玩家脚下。
+**按 I 没反应？**
+先确认没有和其它模组冲突：到「选项 → 控制 → 按键绑定」搜索「AE2 助手」，把键位改成别的试试。
 
-## 目录
+**频道开关重启后失效？**
+开关保存在世界存档里；如果是换存档或新世界，默认是关闭状态。目前只支持「默认」和「无限」两种模式，不会修改整合包自带的 `ae2-common.toml`。
 
-```
-ae2-qol
-├─ src/main/java/com/ae2qol/   源码
-├─ src/main/resources/         mods.toml 与中英文语言文件
-├─ libs/                       编译期依赖（需自行放入）
-├─ build.gradle
-├─ settings.gradle
-└─ README.md
-```
+**礼包少了某几样东西？**
+对应的附属模组没装。日志里会有一条 `Item 'xxx' is missing` 的 WARN，装上对应模组即可。
+
+**飞行开关会影响别人吗？**
+不会，飞行是每位玩家独立的；频道限制是服务器全局的。
+
+**能和别的 AE2 附属一起用吗？**
+可以。所有非 AE2 物品都按注册名查找，缺什么跳过什么，不会硬绑定版本。
+
+## 许可证
+
+本项目使用 [MIT License](LICENSE)。
+
+## 致谢
+
+- [Applied Energistics 2](https://github.com/AppliedEnergistics/Applied-Energistics-2) — 本模组的 API 与界面风格来源
+- [ExtendedAE](https://github.com/GlodBlock/ExtendedAE) — ME 无限元件与扩展设备
+- [AE2WTLib](https://github.com/Mithi83/AE2WTLib) — 无线终端与量子桥卡
+- [ExtendedAE-Plus](https://modrinth.com/mod/extendedae-plus) — 吞噬万籁的寂静、标签无线收发器
+- [AE2-Ftbquest-Detector](https://github.com/qihua233/ME_Quests_Detector_1.21.1) — ME 任务检测器
