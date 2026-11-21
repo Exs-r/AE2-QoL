@@ -1,0 +1,61 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "ae2qol"
+version = "${file.jarVersion}"
+displayName = "AE2 助手"
+authors = "ae2qol"
+description = '''
+一个为 AE2 整合包准备的便捷模组：按 I 打开界面，可取消 AE2 频道限制、开启创造飞行，并领取新手礼包与 ME 无限元件包。
+'''
+
+[[dependencies.ae2qol]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.ae2qol]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.21.2)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.ae2qol]]
+modId = "ae2"
+type = "required"
+versionRange = "[19.2.17,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.ae2qol]]
+modId = "extendedae"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.ae2qol]]
+modId = "ae2wtlib"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.ae2qol]]
+modId = "extendedae_plus"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.ae2qol]]
+modId = "ae2_ftbquest_detector"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
