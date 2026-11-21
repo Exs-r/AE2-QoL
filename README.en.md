@@ -2,6 +2,7 @@
 
 English | [简体中文](README.md)
 
+[![Build](https://img.shields.io/github/actions/workflow/status/Exs-r/ae2-qol/build.yml?style=flat-square&label=Build)](https://github.com/Exs-r/ae2-qol/actions/workflows/build.yml)
 [![Release](https://img.shields.io/github/v/release/Exs-r/ae2-qol?style=flat-square&label=Release)](https://github.com/Exs-r/ae2-qol/releases)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green.svg?style=flat-square)](https://minecraft.net)
