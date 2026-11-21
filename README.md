@@ -137,6 +137,8 @@ AE2、Guideme、Glodium 会在构建时从 Modrinth 的 Maven 仓库自动下载
 
 本项目使用 [MIT License](LICENSE)。
 
+变更记录见 [CHANGELOG.md](CHANGELOG.md)，参与贡献见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
 ## 致谢
 
 - [Applied Energistics 2](https://github.com/AppliedEnergistics/Applied-Energistics-2) — 本模组的 API 与界面风格来源

@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'com.ae2qol'
-version = '1.0.0'
+version = project.mod_version
 
 base {
     archivesName = 'ae2qol'
@@ -26,7 +26,7 @@ repositories {
 }
 
 neoForge {
-    version = '21.1.219'
+    version = project.neoforge_version
 
     runs {
         client {
@@ -47,9 +47,9 @@ neoForge {
 dependencies {
     // AE2 and its own dependencies are provided at runtime by the actual mod jars,
     // so they are compileOnly. They are resolved from Modrinth's Maven repository.
-    compileOnly('maven.modrinth:ae2:19.2.17') { transitive = false }
-    compileOnly('maven.modrinth:guideme:21.1.15') { transitive = false }
-    compileOnly('maven.modrinth:glodium:1.21-2.2-neoforge') { transitive = false }
+    compileOnly("maven.modrinth:ae2:${project.ae2_version}") { transitive = false }
+    compileOnly("maven.modrinth:guideme:${project.guideme_version}") { transitive = false }
+    compileOnly("maven.modrinth:glodium:${project.glodium_version}") { transitive = false }
 }
 
 jar {

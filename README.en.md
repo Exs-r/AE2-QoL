@@ -142,6 +142,8 @@ Yes. Every non-AE2 item is looked up by registry name, so missing mods are skipp
 
 [MIT License](LICENSE)
 
+See [CHANGELOG.md](CHANGELOG.md) for changes and [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
+
 ## Credits
 
 - [Applied Energistics 2](https://github.com/AppliedEnergistics/Applied-Energistics-2) — API and UI style
