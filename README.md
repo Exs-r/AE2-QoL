@@ -4,8 +4,6 @@
 
 面向 **NeoForge 1.21.1** 的 Applied Energistics 2 附属模组，让整合包玩家把精力集中在科技线上。
 
-已验证于整合包 `Beebeeblock_TheSkyhive_v3.07.8_cf_release`（AE2 19.2.18 / ExtendedAE 2.2.42 / AE2WTLib 19.5.1 / ExtendedAE-Plus 1.6.3 / AE2-FTBQuest-Detector 0.6.2）。
-
 ## 功能
 
 | 功能 | 说明 | 状态 |
@@ -62,8 +60,7 @@
 ## 安装
 
 1. 需要 Minecraft 1.21.1 + NeoForge 21.1.x + AE2 19.2.17+。
-2. 把 `build/libs/ae2qol-1.0.0.jar` 放进整合包的 `mods/`。
-3. ExtendedAE、AE2WTLib、ExtendedAE-Plus、AE2-FTBQuest-Detector 为可选依赖：缺失时对应物品会跳过并写一条 WARN 日志，不会导致崩溃。
+2. ExtendedAE、AE2WTLib、ExtendedAE-Plus、AE2-FTBQuest-Detector 为可选依赖：缺失时对应物品会跳过并写一条 WARN 日志，不会导致崩溃。
 
 ## 构建
 
@@ -97,13 +94,3 @@ ae2-qol
 ├─ settings.gradle
 └─ README.md
 ```
-
-## 测试记录
-
-在 Beebeeblock 空岛整合包中实测：
-
-- 按 `I` 打开界面，标题、副标题、tooltip 正常；
-- 频道限制切换后日志输出 `AE2 channel mode set to INFINITE`，重进世界仍保持；
-- 飞行开关切换后双击空格可升空；
-- 两个礼包均可领取，便携元件界面显示完整物品与数量；
-- 关闭再进入游戏后状态从存档恢复。
