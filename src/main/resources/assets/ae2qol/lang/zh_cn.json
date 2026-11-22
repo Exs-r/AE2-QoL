@@ -1,7 +1,7 @@
 {
-  "key.categories.ae2qol": "AE2 助手",
-  "key.ae2qol.open": "打开 AE2 助手界面",
-  "gui.ae2qol.title": "AE2 助手",
+  "key.categories.ae2qol": "AE2 QoL",
+  "key.ae2qol.open": "打开 AE2 QoL 界面",
+  "gui.ae2qol.title": "AE2 QoL",
   "gui.ae2qol.subtitle": "把精力留给科技线",
   "gui.ae2qol.channels": "取消 AE2 频道限制",
   "gui.ae2qol.channels.tooltip": "开启后 AE 网络不再需要频道，类似 GTL 的无限频道模式。",
