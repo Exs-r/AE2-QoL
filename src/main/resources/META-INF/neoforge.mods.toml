@@ -7,6 +7,7 @@ modId = "ae2qol"
 version = "${file.jarVersion}"
 displayName = "AE2 QoL"
 authors = "ae2qol"
+logoFile = "logo.png"
 description = '''
 一个为 AE2 整合包准备的便捷模组：按 I 打开界面，可取消 AE2 频道限制、开启创造飞行，并领取新手礼包与 ME 无限元件包。
 '''

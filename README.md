@@ -1,3 +1,5 @@
+<img src="logo.png" width="128" align="right" alt="AE2 QoL">
+
 # AE2 QoL
 
 [English](README.en.md) | 简体中文
