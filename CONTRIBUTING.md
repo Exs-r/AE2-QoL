@@ -4,8 +4,8 @@
 
 ## 报告问题
 
-- 先搜索 [已有 issue](https://github.com/Exs-r/ae2-qol/issues)，避免重复。
-- 使用 [Bug report](https://github.com/Exs-r/ae2-qol/issues/new?template=bug_report.yml) 模板，附上 `latest.log` 或崩溃报告。
+- 先搜索 [已有 issue](https://github.com/Exs-r/AE2-QoL/issues)，避免重复。
+- 使用 [Bug report](https://github.com/Exs-r/AE2-QoL/issues/new?template=bug_report.yml) 模板，附上 `latest.log` 或崩溃报告。
 - 请说明 Minecraft、NeoForge、AE2 以及各可选附属的版本。
 
 ## 提交改动

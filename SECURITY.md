@@ -7,7 +7,7 @@
 ## 报告安全问题
 
 请不要通过公开的 issue 披露安全问题。请使用 GitHub 的
-[私密漏洞报告](https://github.com/Exs-r/ae2-qol/security/advisories/new)，
+[私密漏洞报告](https://github.com/Exs-r/AE2-QoL/security/advisories/new)，
 或在仓库的 Security 页面提交报告。
 
 请在报告中包含：

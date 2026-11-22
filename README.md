@@ -2,8 +2,8 @@
 
 [English](README.en.md) | 简体中文
 
-[![Build](https://img.shields.io/github/actions/workflow/status/Exs-r/ae2-qol/build.yml?style=flat-square&label=Build)](https://github.com/Exs-r/ae2-qol/actions/workflows/build.yml)
-[![Release](https://img.shields.io/github/v/release/Exs-r/ae2-qol?style=flat-square&label=Release)](https://github.com/Exs-r/ae2-qol/releases)
+[![Build](https://img.shields.io/github/actions/workflow/status/Exs-r/AE2-QoL/build.yml?style=flat-square&label=Build)](https://github.com/Exs-r/AE2-QoL/actions/workflows/build.yml)
+[![Release](https://img.shields.io/github/v/release/Exs-r/AE2-QoL?style=flat-square&label=Release)](https://github.com/Exs-r/AE2-QoL/releases)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green.svg?style=flat-square)](https://minecraft.net)
 [![NeoForge](https://img.shields.io/badge/NeoForge-21.1.x-orange.svg?style=flat-square)](https://neoforged.net)
@@ -56,7 +56,7 @@
 
 1. 安装 Minecraft 1.21.1 与 NeoForge 21.1.x。
 2. 安装 Applied Energistics 2 19.2.17 或更高版本。
-3. 从 [Releases](https://github.com/Exs-r/ae2-qol/releases) 下载 `ae2qol-*.jar`，放入整合包的 `mods` 目录。
+3. 从 [Releases](https://github.com/Exs-r/AE2-QoL/releases) 下载 `ae2qol-*.jar`，放入整合包的 `mods` 目录。
 
 ## 礼包内容
 
@@ -105,7 +105,7 @@
 需要 JDK 21。
 
 ```bash
-git clone https://github.com/Exs-r/ae2-qol.git
+git clone https://github.com/Exs-r/AE2-QoL.git
 cd ae2-qol
 ./gradlew build
 ```
